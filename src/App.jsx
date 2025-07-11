@@ -161,7 +161,7 @@ function Header({
     <header className="header-main" role="banner">
       <div className="header-main-inner">
         <div className="logo-img">
-          <img src="/1.png" alt="Fantasy Deal Logo" />
+          <img src="/public/1.png" alt="Fantasy Deal Logo" />
         </div>
         <nav className="header-nav" role="navigation" aria-label="Main Navigation">
           {NAV_LINKS.map(l => (
@@ -296,7 +296,7 @@ function HeroSection() {
         <div className="hero-badge">Your Strategic Partner in Digital Growth</div>
         <h1 className="hero-title">
           <span className="big">Empowering Brands </span>
-          <span className="big">to Win Online </span>
+          <span className="big">to Win Online</span>
         </h1>
         <div className="hero-subtext">
           Creative agency in Riyadh, elevating brands through strategy, design, and digital storytelling.
@@ -506,7 +506,7 @@ function TeamSection() {
 }
 
 function WorkCard({ img, title, desc, extra, className = "" }) {
-  const imageSrc = img && img.trim() !== "" ? img : "https://placehold.co/600x400?text=Project+Image";
+  const imageSrc = img && img.trim() !== "" ? img.replace(/^\.\//, "/public/") : "https://placehold.co/600x400?text=Project+Image";
   return (
     <div className={`work-card animate-in ${className}`}>
       <img src={imageSrc} alt={title || "Project"} />
@@ -535,7 +535,7 @@ function WorkSection() {
         <div className="work-modern-grid">
           <div className="work-modern-featured animate-in">
             <img
-              src={WORKS[0].img && WORKS[0].img.trim() !== "" ? WORKS[0].img : "https://placehold.co/900x480?text=Project+Image"}
+              src={WORKS[0].img && WORKS[0].img.trim() !== "" ? WORKS[0].img.replace(/^\.\//, "/public/") : "https://placehold.co/900x480?text=Project+Image"}
               alt={WORKS[0].title || "Featured Project"}
               className="work-modern-featured-img"
             />
