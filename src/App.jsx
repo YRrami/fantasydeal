@@ -161,7 +161,7 @@ function Header({
     <header className="header-main" role="banner">
       <div className="header-main-inner">
         <div className="logo-img">
-          <img src="/public/1.png" alt="Fantasy Deal Logo" />
+          <img src="/1.png" alt="Fantasy Deal Logo" />
         </div>
         <nav className="header-nav" role="navigation" aria-label="Main Navigation">
           {NAV_LINKS.map(l => (
