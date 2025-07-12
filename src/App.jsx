@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 import "./App.css";
-import logo from './1.png';
+import logo from './assets/Logo.png';
 
 const NAV_LINKS = [
   { label: "Home", href: "#home" },
