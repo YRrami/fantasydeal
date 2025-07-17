@@ -10,6 +10,45 @@ import section4 from './section4.png';
 
 const TEXT = {
   en: {
+
+blogsHeading: {
+  en: "The Blog – “Marketing Universes Journal”"
+},
+blogs: [
+  "Beyond Short-Form Content: How Interactive Video Shapes Customer Journeys?",
+  "AI or Human Creativity? Crafting Powerful Marketing Blends",
+  "With X and Real-time Trends: Timing Strategies in the Age of Speed",
+  "Retail Customer Experience: How to Build a ‘Super App’ That Sells & Supports",
+  "Impact in the Nonprofit Sector: Turning Digital Engagement into Real Change",
+  "Secrets of Tourism Marketing After Covid: Storytelling to Revive Cities Worldwide"
+],
+
+
+   packages: [
+  {
+    icon: "🪐",
+    title: "Orbit Package (Standard Orbit)",
+    features: [
+      "12 content posts / month",
+      "Monthly ad campaign up to 5,000 SAR",
+      "Interactive monthly performance report",
+      "Quarterly photoshoot session"
+    ]
+  },
+  {
+    icon: "🌌",
+    title: "Nebula Package (Custom Cloud)",
+    features: [
+      "Everything is customizable to your goals and budget (from 20,000 SAR and up)",
+      "Dedicated account manager + 24/7 creative ops room",
+      "AR/VR experiences, predictive AI analytics, and joint growth strategy"
+    ]
+  }
+],
+packagesHeading: {
+  en: "Packages – Flexible Orbit Plans",
+  ar: "الباقات – “خُطط بمدارات مرنة”"
+},
     nav: [
       { label: "Home", href: "#home" },
       { label: "About", href: "#about" },
@@ -18,25 +57,59 @@ const TEXT = {
     ],
     dropdown: [
       { label: "Why Choose Us?", href: "#why" },
-      { label: "Mission & Vision", href: "#vision" },
+      { label: "Packages", href: "#packages" },
       { label: "Core Values", href: "#values" },
       { label: "Services", href: "#services" },
       { label: "Success Partners", href: "#partners" },
-      { label: "Team", href: "#team" }
+      { label: "Success Stories", href: "#success-stories" },
+      { label: "sectors", href: "#sectors" },
+      { label: "Team", href: "#team" },
+      { label: "Blog", href: "#blogs" },
     ],
     coreValues: [
-      "Creativity with Purpose", "Transparency & Trust", "Data-Driven Decisions", "Continuous Growth",
-      "Client-Centered Solutions", "Collaboration", "Excellence", "Accountability", "Respect"
+      "Astrolabe Vision – We think outside the galaxy.",
+      "Crystal Clarity – Transparency from every angle.",
+      "Disciplined Rhythm – We tune to the heartbeat of the market.",
+      "Engineered Passion – Creativity empowered by data.",
+      "Flawless Collaboration – One team, one planet, one goal."
     ],
-    services: [
-      { title: "Social Media Management", desc: "Content creation, posting, community management, and page growth strategies.", icon: "📱" },
-      { title: "Graphic & Motion Design", desc: "Engaging designs tailored for digital platforms.", icon: "🎨" },
-      { title: "Content Creation & Copywriting", desc: "Engaging, relevant, and culturally localized content.", icon: "✍️" },
-      { title: "Media Buying", desc: "Paid ad campaigns across Meta, Google, TikTok, and Snapchat—optimized for ROI.", icon: "💡" },
-      { title: "Search Engine Optimization (SEO)", desc: "Rank your website on Google and attract organic traffic.", icon: "🔍" },
-      { title: "Email Marketing & Automation", desc: "CRM-integrated campaigns that nurture and convert leads.", icon: "📧" },
-      { title: "Brand Identity & Strategy", desc: "Build a brand that’s memorable, relevant, and trustworthy.", icon: "🏷️" }
-    ],
+services: [
+  {
+    icon: "🏬",
+    title: "Retail & Gov. Apps",
+    desc: "App launches, government entities, innovative e-stores, internal platforms."
+  },
+  {
+    icon: "📱",
+    title: "Social Media Management",
+    desc: "X, LinkedIn, Snapchat, Instagram. Content strategy, design, writing, publishing, analytics."
+  },
+  {
+    icon: "🆔",
+    title: "Brand Identity Creation",
+    desc: "Naming, logo, and guidelines to leave a lasting brand impression."
+  },
+  {
+    icon: "💡",
+    title: "Paid Advertising",
+    desc: "Meta, Google, TikTok, Snapchat. Smart targeting & continuous optimization."
+  },
+  {
+    icon: "🎥",
+    title: "Production & Visual Experience",
+    desc: "Cinematic shots, motion graphics, virtual tours, 360° video."
+  },
+  {
+    icon: "🌐",
+    title: "Web & Platforms",
+    desc: "Saudi hosting, UI/UX, content, SEO improvement."
+  },
+  {
+    icon: "📊",
+    title: "Analytics & Monitoring",
+    desc: "Instant dashboards, periodic reporting, actionable insights."
+  }
+],
     partners: [
       "eCommerce Market", "Al Riyadh Hospital", "AlMajal Schools", "TasteHub F&B", "HealthTechX", "Mobit App", "Qode Medical"
     ],
@@ -59,10 +132,17 @@ const TEXT = {
     heroSub: "Creative agency in Riyadh, elevating brands through strategy, design, and digital storytelling.",
     heroBtnA: "Let’s Talk",
     heroBtnB: "See Our Work",
-    aboutAgency: "Fantasy Deal Agency",
-    aboutDesc1: "Riyadh-based. GCC impact.",
-    aboutDesc2: "We help brands become digital leaders through",
-    aboutDesc3: "brilliant strategy, storytelling & design.",
+    aboutAgency: "Who We Are – Journey Between Reality & Imagination",
+    aboutDesc1: "Vision: To be the gateway through which brands in Saudi Arabia transcend into new spaces of influence.",
+    aboutDesc2: "Mission: Harnessing imagination to craft realistic marketing solutions that drive measurable growth.",
+    aboutDesc3: "Our Values (written with imagination):",
+    aboutValues: [
+      "Astrolabe Vision – We think outside the galaxy.",
+      "Crystal Clarity – Transparency from every angle.",
+      "Disciplined Rhythm – We tune to the heartbeat of the market.",
+      "Engineered Passion – Creativity empowered by data.",
+      "Flawless Collaboration – One team, one planet, one goal."
+    ],
     aboutPromise: "Measurable results. Memorable presence.",
     aboutExp: "Years Experience",
     aboutBrands: "Brands Launched",
@@ -103,9 +183,126 @@ const TEXT = {
     more: "More",
     insta: "Instagram",
     linkedin: "LinkedIn",
-    snap: "Snapchat"
+    snap: "Snapchat",
+     sectorsHeading: "Sectors We Serve – Every Planet Speaks Its Language",
+    sectorsDesc: "We tailor success stories, case studies, and video testimonials for every sector to showcase our diverse expertise.",
+    sectors: [
+      "Retail & E-commerce",
+      "Health & Beauty",
+      "Government & Semi-Government",
+      "Hospitality & Tourism",
+      "Technology & Innovation",
+      "Non-Profit Sector"
+    ],
+
+
+successStoriesHeading: "Success Stories – Stars That Lit Up the Sky",
+successStories: [
+  {
+    img: "elite-clinics.jpg", // Replace with your real image path
+    title: "Elite Clinics",
+    goals: "Grow engagement by 300% in 6 months.",
+    approach: "Social content strategy, video series, targeted campaigns.",
+    results: "Achieved 300% increase in engagement in 6 months."
+  },
+  {
+    img: "trendycart.jpg",
+    title: "TrendyCart Store",
+    goals: "Triple sales during the 11.11 campaign.",
+    approach: "Flash sales, influencer marketing, retargeting ads.",
+    results: "Sales multiplied 3x during 11.11 campaign."
+  },
+  {
+    img: "green-nation.jpg",
+    title: "‘Green Nation’ Gov. Initiative",
+    goals: "Achieve 2M organic views in 2 weeks.",
+    approach: "Awareness campaign, viral hashtag challenge, UGC.",
+    results: "2M+ organic views in just two weeks."
+  }
+],
+
+
+
   },
   ar: {
+
+
+blogsHeading: {
+  ar: "المدونة – “مدوّنة الأكوان التسويقية”"
+},
+blogs: [
+  "مـا بعد المحتوى القصير: كيف يؤثر الفيديو التفاعلي في رحلة العميل؟",
+  "بذكاء اصطناعي أم إبداع إنساني؟ صناعة مزيج تسويقي فائق القوة",
+  "بمنصة X وتردد اللحظة: استراتيجيات توقيت النشر في عالم السرعة",
+  "تجربة العميل في متاجر التجزئة: كيف تخلق “سوبر آب” يجمع البيع والدعم؟",
+  "إيصال الأثر في القطاع غير الربحي: تحويل التفاعل الرقمي إلى تأثيرات حقيقية",
+  "أسرار التسويق السياحي بعد كوفيد: سرد القصص لإحياء مدن العالم"
+],
+
+
+successStoriesHeading: "قصص النجاح – “نجوم أضاءت السماء”",
+successStories: [
+  {
+    img: "elite-clinics.jpg",
+    title: "Elite Clinics",
+    goals: "نمو التفاعل بنسبة 300% خلال 6 أشهر.",
+    approach: "استراتيجية محتوى اجتماعي، سلسلة فيديو، حملات موجهة.",
+    results: "تحقيق زيادة 300% في التفاعل خلال 6 أشهر."
+  },
+  {
+    img: "trendycart.jpg",
+    title: "متجر TrendyCart",
+    goals: "مضاعفة المبيعات ثلاث مرات في حملة “11.11”.",
+    approach: "عروض فلاش، تسويق مؤثرين، إعادة الاستهداف.",
+    results: "المبيعات تضاعفت ثلاث مرات في حملة 11.11."
+  },
+  {
+    img: "green-nation.jpg",
+    title: "مبادرة “وطن أخضر” الحكومية",
+    goals: "تحقيق 2 مليون مشاهدة عضوية خلال أسبوعين.",
+    approach: "حملة توعية، تحدي هاشتاق فيروسي، محتوى جماهيري.",
+    results: "2 مليون مشاهدة عضوية خلال أسبوعين فقط."
+  }
+],
+
+
+
+
+    sectorsHeading: "القطاعات التي نخدمها – “لكل كوكبٍ لغته”",
+    sectorsDesc: "يتم تخصيص قصص نجاح وعينات عمل لكل قطاع مع شهادات مصوّرة لإظهار التنوع.",
+    sectors: [
+      "التجزئة والمتاجر الإلكترونية",
+      "الصحة والجمال",
+      "القطاع الحكومي والجهات شبه الحكومية",
+      "الضيافة والسياحة",
+      "التقنية والابتكار",
+      "القطاع غير الربحي"
+    ],
+  packages: [
+  {
+    icon: "🪐",
+    title: "باقة Orbit (المدار القياسي)",
+    features: [
+      "12 منشور محتوى / شهر",
+      "حملة إعلانية شهرية حتى 5,000 ر.س.",
+      "تقرير أداء شهري تفاعلي",
+      "جلسة تصوير ربع سنوية"
+    ]
+  },
+  {
+    icon: "🌌",
+    title: "باقة Nebula (السحابة المخصّصة)",
+    features: [
+      "كل شيء قابل للتشكيل حسب أهدافك وميزانيتك (من 20,000 ر.س وحتى ما لا نهاية)",
+      "مدير حساب مخصّص + غرفة عمليات إبداعية على مدار الساعة",
+      "تجارب واقع معزّز/افتراضي، تحليلات AI تنبؤية، واستراتيجية نموّ مشتركة"
+    ]
+  }
+],
+packagesHeading: {
+  ar: "الباقات – “خُطط بمدارات مرنة”"
+},
+
     nav: [
       { label: "الرئيسية", href: "#home" },
       { label: "من نحن", href: "#about" },
@@ -114,24 +311,59 @@ const TEXT = {
     ],
     dropdown: [
       { label: "لماذا نحن؟", href: "#why" },
-      { label: "الرؤية والرسالة", href: "#vision" },
+      { label: "الباقات", href: "#packages" },
       { label: "القيم الجوهرية", href: "#values" },
       { label: "خدماتنا", href: "#services" },
       { label: "شركاء النجاح", href: "#partners" },
-      { label: "الفريق", href: "#team" }
+      { label: "قصص النجاح", href: "#success-stories" },
+      { label: "الفريق", href: "#team" },
+      { label: "القطاعات", href: "#sectors" },
+      { label: "المدونة", href: "#blogs" },
     ],
     coreValues: [
-      "الإبداع الهادف", "الشفافية والثقة", "قرارات مبنية على البيانات", "النمو المستمر",
-      "حلول تركّز على العميل", "التعاون", "التميز", "المسؤولية", "الاحترام"
+      "رؤية اسطرلابية – نفكّر خارج المجرة.",
+      "على وضح النقا – وضوح يُرى من كل زاوية.",
+      "الإيقاع المنضبط – نضبط نبض السوق على المقاس.",
+      "الشغف المُمكنن – إبداع مُدعّم بالبيانات.",
+      "تعاون ما وراه ذلة – فريق واحد، كوكبٌ واحد، هدفٌ واحد."
     ],
-    services: [
-      { title: "إدارة وسائل التواصل الاجتماعي", desc: "إنشاء المحتوى، النشر، إدارة المجتمعات، واستراتيجيات نمو الصفحات.", icon: "📱" },
-      { title: "تصميم الجرافيك والموشن", desc: "تصاميم جذابة مخصصة للمنصات الرقمية.", icon: "🎨" },
-      { title: "كتابة وإنشاء المحتوى", desc: "محتوى ملائم وجذاب وموّطن ثقافياً.", icon: "✍️" },
-      { title: "الإعلانات المدفوعة", desc: "حملات إعلانية عبر Meta, Google, TikTok, Snapchat لتحقق أعلى عائد.", icon: "💡" },
-      { title: "تحسين محركات البحث", desc: "ترتيب موقعك على جوجل وجذب زيارات عضوية.", icon: "🔍" },
-      { title: "التسويق عبر البريد الإلكتروني", desc: "حملات CRM فعالة لبناء العلاقات وتحويل العملاء.", icon: "📧" },
-      { title: "هوية العلامة واستراتيجيتها", desc: "بناء علامة تجارية مميزة وموثوقة وذات صلة.", icon: "🏷️" }
+   services: [
+  {
+    icon: "🏬",
+    title: "تطبيقات المتاجر والجهات",
+    desc: "إطلاق تطبيقات متاجر إلكترونية، منصات حكومية، حلول مبتكرة داخلية."
+  },
+  {
+    icon: "📱",
+    title: "إدارة منصات التواصل",
+    desc: "إستراتيجية، كتابة، تصميم، نشر، تحليلات على انستجرام، X، لينكدإن، سناب."
+  },
+  {
+    icon: "🆔",
+    title: "ابتكار الهوية",
+    desc: "صياغة اسم، شعار، ودليل بصري يمنح علامتك حضور لا يُنسى."
+  },
+  {
+    icon: "💡",
+    title: "الإعلانات المدفوعة",
+    desc: "حملات META وGoogle وTikTok وسناب باستهداف ذكي وتحسين مستمر."
+  },
+  {
+    icon: "🎥",
+    title: "إنتاج وتجربة بصرية",
+    desc: "تصوير سينمائي وجولات، موشن جرافيك، فيديو 360°."
+  },
+  {
+    icon: "🌐",
+    title: "حلول المواقع والمنصات",
+    desc: "حجز نطاق سعودي، تصميم UX/UI، كتابة محتوى، تحسين SEO."
+  },
+  {
+    icon: "📊",
+    title: "التحليلات الذكية",
+    desc: "لوحات بيانات لحظية، تقارير دورية، توصيات فورية."
+  }
+
     ],
     partners: [
       "eCommerce Market", "مستشفى الرياض", "مدارس المجال", "TasteHub F&B", "HealthTechX", "تطبيق Mobit", "Qode Medical"
@@ -150,15 +382,36 @@ const TEXT = {
       { img: section1, title: "مجموعة TasteHub F&B", desc: "تصميم الهوية، المحتوى، والإعلانات لقطاع الضيافة.", extra: "هوية · إعلانات" }
     ],
     badge: "شريكك الاستراتيجي للنمو الرقمي",
+    heroSlogan: "حدودنا تتخطى كل خيال",
+    heroAnimated: "تسويق بخيال واقعي",
+    heroIntro: "في عالمٍ يتبدّل كلَّ ثانية، نخلق في الصفقة الخيالية أكواناً جديدة من الفرص التسويقيّة؛ نصيغ الفكرة، نُلهم الجماهير، ونحوِّل قصتك إلى ضوءٍ يلمع في فضاء المنافسة. انضم إلينا… حيث لا سقف فوق الإبداع.",
+    heroQuickCards: [
+      { title: "استراتيجية", icon: "📊" },
+      { title: "إبداع بصري", icon: "🎨" },
+      { title: "نموّ مستمر", icon: "🚀" }
+    ],
+    heroCounters: [
+      { label: "قطاعات خدمناها", value: 10, prefix: "+", suffix: "" },
+      { label: "علامة تجارية", value: 15, prefix: "+", suffix: "" },
+      { label: "رضا عملاء", value: 97, prefix: "", suffix: "%" }
+    ],
+    heroCta: "ابدأ معنا",
     heroTitleA: "تمكين العلامات التجارية",
     heroTitleB: "للنجاح عبر الإنترنت",
     heroSub: "وكالة إبداعية في الرياض، نرتقي بالعلامات التجارية عبر الاستراتيجية، والتصميم، ورواية القصص الرقمية.",
     heroBtnA: "تواصل معنا",
     heroBtnB: "شاهد أعمالنا",
-    aboutAgency: "وكالة Fantasy Deal",
-    aboutDesc1: "مقرنا الرياض. تأثيرنا خليجي.",
-    aboutDesc2: "نساعد العلامات التجارية على الريادة رقمياً عبر",
-    aboutDesc3: "استراتيجية مبدعة، قصة ملهمة وتصميم رائع.",
+    aboutAgency: "من نحن – رحلة بين الواقع والخيال",
+    aboutDesc1: "رؤيتنا: أن نكون البوابة التي تعبر من خلالها العلامات التجارية في المملكة إلى فضاءات جديدة من التأثير.",
+    aboutDesc2: "رسالتنا: تسخير الخيال لصناعة حلول تسويقيّة واقعيّة تقود إلى نموّ قابل للقياس.",
+    aboutDesc3: "قيمنا (مُصاغة بخيال):",
+    aboutValues: [
+      "رؤية اسطرلابية – نفكّر خارج المجرة.",
+      "على وضح النقا – وضوح يُرى من كل زاوية.",
+      "الإيقاع المنضبط – نضبط نبض السوق على المقاس.",
+      "الشغف المُمكنن – إبداع مُدعّم بالبيانات.",
+      "تعاون ما وراه ذلة – فريق واحد، كوكبٌ واحد، هدفٌ واحد."
+    ],
     aboutPromise: "نتائج ملموسة. حضور لا يُنسى.",
     aboutExp: "سنوات خبرة",
     aboutBrands: "علامة تم إطلاقها",
@@ -202,7 +455,7 @@ const TEXT = {
     snap: "سناب شات"
   }
 };
-
+ 
 function LangSwitcher({ lang, setLang }) {
   return (
     <button
@@ -430,74 +683,193 @@ function Header({
   );
 }
 
-function HeroSection({ t }) {
+
+function QuickCard({ icon, title }) {
   return (
-    <section id="home" className="hero-section">
-      <div className="hero-orb blue1" />
-      <div className="hero-orb blue2" />
-      <div className="hero-orb blue3" />
-      <div className="hero-orb gold1" />
-      <div className="hero-orb gold2" />
-      <div className="hero-orb white1" />
-      <div className="hero-orb white2" />
-      <div className="hero-center animate-in">
-        <div className="hero-badge">{t.badge}</div>
-        <h1 className="hero-title">
-          <span className="big">{t.heroTitleA}</span>
-          <span className="big">{t.heroTitleB}</span>
-        </h1>
-        <div className="hero-subtext">{t.heroSub}</div>
-        <div className="hero-cta-main">
-          <a href="#contact" className="hero-main-btn">{t.heroBtnA}</a>
-          <a href="#work" className="hero-main-btn gold-btn">{t.heroBtnB}</a>
+    <div className="hero-quick-card">
+      <div className="quick-card-icon">{icon}</div>
+      <div className="quick-card-title">{title}</div>
+    </div>
+  );
+}
+function AnimatedCounter({ value, suffix, duration = 1200 }) {
+  const [display, setDisplay] = useState(0);
+  const ref = useRef();
+
+  useEffect(() => {
+    let start = 0;
+    let startTimestamp = null;
+    const step = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      setDisplay(Math.floor(progress * (value - start) + start));
+      if (progress < 1) {
+        ref.current = requestAnimationFrame(step);
+      } else {
+        setDisplay(value);
+      }
+    };
+    ref.current = requestAnimationFrame(step);
+    return () => cancelAnimationFrame(ref.current);
+  }, [value, duration]);
+
+  return (
+    <span>
+      {display}
+      {suffix}
+    </span>
+  );
+}
+
+function HeroSectionCustom({ lang }) {
+  const isAr = lang === "ar";
+  const counters = isAr
+    ? [
+        { value: 10, suffix: "+", label: "قطاعات خدمناها" },
+        { value: 15, suffix: "+", label: "علامة تجارية" },
+        { value: 97, suffix: "%", label: "رضا عملاء" }
+      ]
+    : [
+        { value: 10, suffix: "+", label: "Sectors Served" },
+        { value: 15, suffix: "+", label: "Brands" },
+        { value: 97, suffix: "%", label: "Client Satisfaction" }
+      ];
+
+  const quickCards = isAr
+    ? [
+        { icon: "📊", label: "استراتيجية" },
+        { icon: "🎨", label: "إبداع بصري" },
+        { icon: "🚀", label: "نمو مستمر" }
+      ]
+    : [
+        { icon: "📊", label: "Strategy" },
+        { icon: "🎨", label: "Visual Creativity" },
+        { icon: "🚀", label: "Continuous Growth" }
+      ];
+
+  const slogan = isAr ? "حدودنا تتخطى كل خيال" : "Our Imagination Knows No Bounds";
+  const subSlogan = isAr
+    ? <>تسويق <span className="animated-gradient">بخيال واقعي</span></>
+    : <>Marketing with <span className="animated-gradient">Realistic Imagination</span></>;
+  const intro = isAr
+    ? "في عالمٍ يتبدّل كلَّ ثانية، نخلق في الصفقة الخيالية أكواناً جديدة من الفرص التسويقيّة؛ نصيغ الفكرة، نُلهم الجماهير، ونحوِّل قصتك إلى ضوءٍ يلمع في فضاء المنافسة. انضم إلينا… حيث لا سقف فوق الإبداع."
+    : "In a world that changes every second, Fantasy Deal crafts new marketing universes: we shape ideas, inspire audiences, and turn your story into a light that shines in the space of competition. Join us—where creativity has no limits.";
+  const ctaText = isAr ? "ابدأ معنا" : "Start With Us";
+  const logoPath = logo;
+
+  return (
+    <section id="home" className="hero-modern">
+      <div className="hero-orb-glassy orb1"></div>
+      <div className="hero-orb-glassy orb2"></div>
+      <div className="hero-orb-glassy orb3"></div>
+      <div className="hero-modern-inner">
+        <div className="hero-modern-left-col">
+          <img src={logoPath} className="hero-logo-modern" alt="Fantasy Deal Logo" />
+          <div className="hero-modern-text-group">
+            <h1 className="hero-modern-title">{slogan}</h1>
+            <div className="hero-modern-sub">{subSlogan}</div>
+            <div className="hero-modern-intro">{intro}</div>
+            <a href="#contact" className="hero-modern-cta">{ctaText}</a>
+          </div>
+        </div>
+        <div className="hero-modern-right-col">
+          <div className="hero-modern-counters">
+            {counters.map((counter) => (
+              <div className="hero-modern-counter" key={counter.label}>
+                <div className="counter-value">
+                  <AnimatedCounter value={counter.value} suffix={counter.suffix} />
+                </div>
+                <div className="counter-label">{counter.label}</div>
+              </div>
+            ))}
+          </div>
+          <div className="hero-modern-cardgrid">
+            {quickCards.map((card) => (
+              <div className="hero-modern-card" key={card.label}>
+                <div className="card-icon">{card.icon}</div>
+                <div className="card-label">{card.label}</div>
+              </div>
+            ))}
+          </div>
+          
         </div>
       </div>
     </section>
   );
 }
 
-function AboutSection({ t }) {
+
+
+
+
+
+
+function AboutSection({ t, lang }) {
+  const isAr = lang === "ar";
+  const aboutValues = (t && t.aboutValues) ? t.aboutValues : [];
+
   return (
     <section id="about" className="section about-section animate-in">
       <div className="about-bg-orb" />
       <div className="about-inner">
         <div className="about-left">
           <div className="about-icon-badge">
-            <span className="about-icon-main" aria-hidden="true">🚀</span>
+            <span className="about-icon-main" aria-hidden="true">{isAr ? "🧾" : "🚀"}</span>
           </div>
-          <div className="about-signature">{t.aboutSince}</div>
+          <div className="about-signature">
+            {isAr ? "من نحن" : t?.aboutSince || ""}
+          </div>
         </div>
-        <div className="about-right">
-          <h2>
-            <span className="about-title-blue">{t.aboutAgency}</span>
+        <div className="about-right" style={isAr ? { direction: "rtl", textAlign: "right" } : {}}>
+          <h2 style={{
+            fontSize: "2.05rem",
+            fontWeight: 900,
+            marginBottom: "10px",
+            letterSpacing: "-0.8px",
+            color: "#6bbac3"
+          }}>
+            {t?.aboutAgency || ""}
           </h2>
-          <p className="about-blurb">
-            {t.aboutDesc1}<br />
-            {t.aboutDesc2} <span className="about-blurb-highlight">{t.aboutDesc3}</span>.<br />
-            <span className="about-promise">{t.aboutPromise}</span>
-          </p>
-          <div className="about-pillars">
-            <div className="about-pillar">
-              <span className="pillar-icon">🌟</span>
-              <div>
-                <b>9+</b>
-                <div>{t.aboutExp}</div>
-              </div>
+          <div className="about-blurb" style={{ fontWeight: 700, color: "#FFD166", marginBottom: 20 }}>
+            <div style={{ color: "#FFD166", fontWeight: 700 }}>
+              {isAr ? "رؤيتنا:" : "Vision:"}
             </div>
-            <div className="about-pillar">
-              <span className="pillar-icon">🏆</span>
-              <div>
-                <b>50+</b>
-                <div>{t.aboutBrands}</div>
-              </div>
+            <div style={{ color: "#fff", fontWeight: 600, marginBottom: 7 }}>
+              {t?.aboutDesc1 || ""}
             </div>
-            <div className="about-pillar">
-              <span className="pillar-icon">👥</span>
-              <div>
-                <b>10M+</b>
-                <div>{t.aboutAud}</div>
-              </div>
+            <div style={{ color: "#FFD166", fontWeight: 700 }}>
+              {isAr ? "رسالتنا:" : "Mission:"}
             </div>
+            <div style={{ color: "#fff", fontWeight: 600 }}>
+              {t?.aboutDesc2 || ""}
+            </div>
+          </div>
+          <div style={{
+            fontWeight: 800,
+            color: "#6bbac3",
+            marginBottom: 14,
+            fontSize: "1.12rem"
+          }}>
+            {t?.aboutDesc3 || ""}
+          </div>
+          <div className="about-pillars" style={{ marginTop: 16 }}>
+            {aboutValues.map((val, i) => (
+              <div className="about-pillar" key={i}>
+                <span className="pillar-icon">
+                  {val.match(/اسطرلابية|Astrolabe/) ? "🌌" :
+                    val.match(/النقا|Clarity/) ? "🔭" :
+                    val.match(/الإيقاع|Rhythm/) ? "🎵" :
+                    val.match(/الشغف|Passion/) ? "💡" :
+                    val.match(/تعاون|Collaboration/) ? "🤝" :
+                    "🌟"
+                  }
+                </span>
+                <div>
+                  <b>{val.split("–")[0]}</b>
+                  <div>{val.split("–")[1]}</div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -548,29 +920,60 @@ function WhySection({ t }) {
     </section>
   );
 }
+// ---- Packages Section ----
+function PackagesSection({ t, lang }) {
+  // Defensive: handle both string/object for heading and for package data
+  let heading = "";
+  if (typeof t.packagesHeading === "string") {
+    heading = t.packagesHeading;
+  } else if (typeof t.packagesHeading === "object" && t.packagesHeading !== null) {
+    heading = t.packagesHeading[lang] || Object.values(t.packagesHeading)[0] || "";
+  }
 
-function MissionVisionSection({ t }) {
+  const packages = Array.isArray(t.packages) ? t.packages : [];
+
   return (
-    <section id="vision" className="section vision mv-section animate-in">
-      <div className="mv-bg-orb" />
-      <div className="section-content mv-content">
-        <h2 className="mv-heading">{t.mvHeading}</h2>
-        <div className="mission-vision-cards mv-cards">
-          <div className="mv-card mv-mission">
-            <div className="mv-card-icon" aria-hidden="true">🎯</div>
-            <div className="mv-title">{t.mission}</div>
-            <div className="mv-body">{t.missionBody}</div>
-          </div>
-          <div className="mv-card mv-vision">
-            <div className="mv-card-icon blue" aria-hidden="true">🌟</div>
-            <div className="mv-title blue">{t.vision}</div>
-            <div className="mv-body">{t.visionBody}</div>
-          </div>
+    <section id="packages" className="section packages-section animate-in">
+      <div className="section-content">
+        <h2 className="packages-heading">{heading}</h2>
+        <div className="packages-cards-grid">
+          {packages.map((pkg, i) => {
+            // Get the correct title and features for the current language
+            let title = typeof pkg.title === "string"
+              ? pkg.title
+              : (pkg.title?.[lang] || Object.values(pkg.title || {})[0] || "");
+
+            let features = Array.isArray(pkg.features)
+              ? pkg.features
+              : (pkg.features?.[lang] || Object.values(pkg.features || {})[0] || []);
+
+            // If features is not array, wrap as array
+            if (!Array.isArray(features)) features = [features];
+
+            return (
+              <div className="package-card" key={i}>
+                <div className="package-icon">{pkg.icon}</div>
+                <div className="package-title">{title}</div>
+                <ul className="package-features">
+                  {features.map((f, idx) => (
+                    <li key={idx}>{f}</li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
   );
 }
+
+PackagesSection.propTypes = {
+  t: PropTypes.object.isRequired,
+  lang: PropTypes.oneOf(["en", "ar"]).isRequired
+};
+
+
 
 function ValuesSection({ t }) {
   return (
@@ -586,6 +989,10 @@ function ValuesSection({ t }) {
     </section>
   );
 }
+
+
+
+
 
 function ServiceCard({ icon, title, desc }) {
   return (
@@ -616,6 +1023,74 @@ function ServicesSection({ t }) {
     </section>
   );
 }
+
+
+function SectorsSection({ t }) {
+  return (
+    <section id="sectors" className="section sectors-section animate-in">
+      <div className="sectors-orb-bg" />
+      <div className="section-content">
+        <h2 className="sectors-heading">{t.sectorsHeading}</h2>
+        <div className="sectors-cards-grid">
+          {t.sectors.map((sector, idx) => (
+            <div className="sector-card" key={idx}>
+              <div className="sector-icon">
+  {
+    [
+      "🛍️", // Retail & E-commerce
+      "🧴", // Health & Beauty
+      "🏢", // Government & Semi-Government
+      "🏨", // Hospitality & Tourism
+      "🖥️", // Technology & Innovation
+      "🫱"  // Non-Profit Sector
+    ][idx] || "🛍️"
+  }
+</div>
+              <div className="sector-label">{sector}</div>
+            </div>
+          ))}
+        </div>
+        <div className="sectors-desc">{t.sectorsDesc}</div>
+      </div>
+    </section>
+  );
+}
+
+
+
+
+function SuccessStoriesSection({ t }) {
+  return (
+    <section id="success-stories" className="section success-stories-section animate-in">
+      <div className="section-content">
+        <h2 className="success-stories-heading">
+          <span className="star-icon" aria-hidden="true">🌟</span> {t.successStoriesHeading}
+        </h2>
+        <div className="success-stories-grid">
+          {t.successStories.map((story, i) => (
+            <div className="success-story-card" key={i}>
+              <div className="story-img-wrap">
+                <img src={story.img} alt={story.title} className="story-img" />
+              </div>
+              <div className="story-title">{story.title}</div>
+              <div className="story-detail"><b>🎯 {t.lang === "ar" ? "الأهداف" : "Goals"}:</b> {story.goals}</div>
+              <div className="story-detail"><b>🛠️ {t.lang === "ar" ? "آلية العمل" : "Approach"}:</b> {story.approach}</div>
+              <div className="story-detail"><b>📊 {t.lang === "ar" ? "النتائج" : "Results"}:</b> {story.results}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+
+
+
+
+
+
+
 
 function PartnersSection({ t }) {
   return (
@@ -726,35 +1201,172 @@ function WorkSection({ t }) {
   );
 }
 
-function ContactSection({ t }) {
+
+
+
+function BlogSection({ t, lang }) {
+  const heading = t.blogsHeading?.[lang] || t.blogsHeading || "";
+  const subtitle = t.blogsSubtitle?.[lang] || t.blogsSubtitle || "";
+  const blogs = Array.isArray(t.blogs) ? t.blogs : [];
+
   return (
-    <section id="contact" className="section contact animate-in">
+    <section id="blogs" className="section blogs-section animate-in">
       <div className="section-content">
-        <h2>{t.contactHeading}</h2>
-        <div className="contact-content">
-          <div className="contact-details">
-            <div>{t.contactTitle}</div>
-            <div style={{ margin: "13px 0" }}>{t.contactLoc}</div>
-            <a href="mailto:info@fantasydeal.com">info@fantasydeal.com</a>
-            <a href="tel:+966xxxxxxxxx">+966 (your number)</a>
-            <div className="contact-links">
-              <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">{t.insta}</a>
-              <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">{t.linkedin}</a>
-              <a href="https://snapchat.com/" target="_blank" rel="noopener noreferrer">{t.snap}</a>
-            </div>
-          </div>
-          <form className="contact-form" onSubmit={e => e.preventDefault()}>
-            <input type="text" placeholder={t.contactFormName} required aria-label={t.contactFormName} />
-            <input type="email" placeholder={t.contactFormEmail} required aria-label={t.contactFormEmail} />
-            <textarea placeholder={t.contactFormMsg} required aria-label={t.contactFormMsg} />
-            <button type="submit" className="header-cta-btn">{t.contactBtn}</button>
-          </form>
+        <div className="blogs-header">
+          <span className="blogs-emoji" aria-hidden>📝</span>
+          <h2 className="blogs-heading">{heading}</h2>
+        </div>
+        {subtitle && <div className="blogs-subtitle">{subtitle}</div>}
+        <div className="blogs-grid">
+          {blogs.map((blog, i) => (
+            <a
+              className="blog-card"
+              key={i}
+              href={blog.href || "#"}
+              tabIndex={0}
+              style={{ direction: lang === "ar" ? "rtl" : "ltr" }}
+            >
+              <div className="blog-card-inner">
+                <div className="blog-card-title">{typeof blog === "string" ? blog : blog.title}</div>
+                {blog.desc && <div className="blog-card-desc">{blog.desc}</div>}
+              </div>
+              <span className="blog-card-arrow" aria-hidden>→</span>
+            </a>
+          ))}
         </div>
       </div>
     </section>
   );
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+function ContactSection({ t, lang = "ar" }) {
+  const isRTL = lang === "ar";
+  const dir = isRTL ? "rtl" : "ltr";
+  return (
+    <section id="contact" className="section contact animate-in" dir={dir}>
+      <div className="section-content">
+        <h2 className="contact-heading">{t.contactHeading}</h2>
+        <div className="contact-content-grid">
+          <div className="contact-info-panel">
+            <div className="contact-title">{t.contactTitle}</div>
+            <div className="contact-row">
+              <span className="contact-label">🌐</span>
+              <a href="https://fantasydeal.sa" target="_blank" rel="noopener noreferrer">
+                fantasydeal.sa
+              </a>
+            </div>
+            <div className="contact-row">
+              <span className="contact-label">✉️</span>
+              <a href="mailto:fantasydeal.sa@gmail.com">fantasydeal.sa@gmail.com</a>
+            </div>
+            <div className="contact-row">
+              <span className="contact-label">📞</span>
+              <a href="https://wa.me/966566221181" target="_blank" rel="noopener noreferrer">
+                +966 56 622 1181
+              </a>
+            </div>
+            <div className="contact-row">
+              <span className="contact-label">📍</span>
+              <span>{t.contactLoc}</span>
+            </div>
+            <div className="contact-social-row">
+              <a href="https://instagram.com/fantasy.deal" className="contact-social" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <span>Instagram</span>
+              </a>
+              <a href="https://x.com/fantasy.deal" className="contact-social" target="_blank" rel="noopener noreferrer" aria-label="X">
+                <span>X</span>
+              </a>
+              <a href="https://snapchat.com/add/fantasy.deal" className="contact-social" target="_blank" rel="noopener noreferrer" aria-label="Snapchat">
+                <span>Snapchat</span>
+              </a>
+              <a href="https://linkedin.com/company/fantasydeal" className="contact-social" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+          <form className="contact-form" onSubmit={e => e.preventDefault()}>
+            <input
+              type="text"
+              placeholder={t.contactFormName}
+              required
+              aria-label={t.contactFormName}
+              className="input-field"
+            />
+            <input
+              type="email"
+              placeholder={t.contactFormEmail}
+              required
+              aria-label={t.contactFormEmail}
+              className="input-field"
+            />
+            <select
+              required
+              aria-label={t.contactFormSector}
+              defaultValue=""
+              className="input-field"
+            >
+              <option value="" disabled>
+                {t.contactFormSector || "Sector / Industry"}
+              </option>
+              {(t.sectorsList || [
+                "Retail & eCommerce",
+                "Health & Beauty",
+                "Government / Semi-Gov",
+                "Hospitality & Tourism",
+                "Tech & Innovation",
+                "Non-profit",
+                "Other",
+              ]).map((sector, i) => (
+                <option value={sector} key={i}>{sector}</option>
+              ))}
+            </select>
+            <textarea
+              placeholder={t.contactFormMsg}
+              required
+              aria-label={t.contactFormMsg}
+              className="input-field"
+              rows={4}
+            />
+            <button type="submit" className="header-cta-btn contact-submit-btn">
+              {t.contactBtn}
+            </button>
+          </form>
+        </div>
+        <div className="contact-map-embed">
+          <iframe
+            title="Fantasy Deal Riyadh Location"
+            src="https://www.google.com/maps?q=24.7136,46.6753&z=15&output=embed"
+            width="100%"
+            height="220"
+            frameBorder="0"
+            style={{
+              borderRadius: "14px",
+              minHeight: "180px",
+              background: "#f7f7fa",
+              marginTop: 24,
+              border: "none"
+            }}
+            allowFullScreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  );
+}
 function Footer({ t }) {
   return (
     <footer className="footer">
@@ -794,15 +1406,18 @@ export default function App() {
         setLang={setLang}
       />
       <main>
-        <HeroSection t={t} />
+       <HeroSectionCustom lang={lang} />
         <AboutSection t={t} />
         <WhySection t={t} />
-        <MissionVisionSection t={t} />
+        <PackagesSection t={t} />
         <ValuesSection t={t} />
         <ServicesSection t={t} />
+        <SectorsSection t={t} />
+        <SuccessStoriesSection t={t} />
         <PartnersSection t={t} />
         <TeamSection t={t} />
         <WorkSection t={t} />
+        <BlogSection t={t} lang={lang} />
         <ContactSection t={t} />
       </main>
       <Footer t={t} />
