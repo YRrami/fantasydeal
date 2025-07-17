@@ -420,12 +420,13 @@
 }
 
 .packages-cards-grid {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 36px;
+  
   justify-content: center;
   align-items: stretch;
-  margin: 0 auto;
+  margin: 20px;
+
   width: 100%;
 }
 
@@ -434,6 +435,7 @@
   border-radius: 20px;
   box-shadow: 0 6px 34px #6bbac325, 0 1.5px 0 #23253d30;
   padding: 42px 30px 35px 30px;
+  margin: 20px;
   min-width: 0;
   max-width: 410px;
   width: 100%;
